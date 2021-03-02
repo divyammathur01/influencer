@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const mongoose  = require ('mongoose');
 const MONGO_URL =
   "mongodb+srv://userdivyam:divyam12@cluster0.rrn3u.mongodb.net/influencerdb?retryWrites=true&w=majority";
-const PORT = 4000;
+const PORT = process.env.PORT || 8000;
 const app = express();
 
 
