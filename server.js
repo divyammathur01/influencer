@@ -38,6 +38,9 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use('/',createPageRoute);
 app.use('/',authRoute);
 
+app.get('/',(req,res)=>{
+  res.send("hello from node app")
+})
 
 
 app.listen(PORT , ()=>{
